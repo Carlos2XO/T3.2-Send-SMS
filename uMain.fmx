@@ -1,0 +1,80 @@
+object frmSms: TfrmSms
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 352
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object edtNumber: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Align = Top
+    TabOrder = 1
+    KeyboardType = PhonePad
+    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.FontColor = claBlueviolet
+    Position.Y = 40.000000000000000000
+    Size.Width = 352.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = 'N'#250'mero de tel'#233'fono '
+    StyledSettings = [Family, Style]
+  end
+  object tbarHeader: TToolBar
+    Size.Width = 352.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object btnExit: TButton
+      Align = Left
+      Size.Width = 57.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'cleareditbutton'
+      TabOrder = 0
+      Text = 'btnExit'
+    end
+    object btnSend: TButton
+      Align = Right
+      Position.X = 287.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'playtoolbuttonbordered'
+      TabOrder = 1
+      Text = 'btnSend'
+      OnClick = btnSendClick
+    end
+  end
+  object memMessage: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    TextSettings.WordWrap = True
+    Align = Client
+    Size.Width = 352.000000000000000000
+    Size.Height = 377.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Viewport.Width = 348.000000000000000000
+    Viewport.Height = 373.000000000000000000
+  end
+  object StatusBar1: TStatusBar
+    Align = Top
+    Position.Y = 81.000000000000000000
+    ShowSizeGrip = True
+    Size.Width = 352.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object Label1: TLabel
+      Align = Top
+      Size.Width = 352.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Total de caracteres: 160 de 160'
+      TabOrder = 1
+    end
+  end
+end
